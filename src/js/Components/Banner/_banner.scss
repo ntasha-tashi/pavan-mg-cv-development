@@ -1,7 +1,11 @@
+@use "../../../scss/general/mixins";
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10em;
   margin-bottom: 10em;
+  .gradient {
+    @extend %linear-gradient;
+  }
 }
