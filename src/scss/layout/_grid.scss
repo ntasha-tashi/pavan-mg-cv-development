@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @for $i from 1 through 12 {
+  .col-#{$i} {
+    display: flex;
+    width: calc(100% / $i);
+    min-height: 1px;
+  }
+  }
+}

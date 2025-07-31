@@ -1,0 +1,11 @@
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__nav, .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    align-items: center;
+  }
+}
