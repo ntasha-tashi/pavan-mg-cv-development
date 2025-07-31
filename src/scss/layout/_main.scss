@@ -1,6 +1,8 @@
+@use 'scss-reset';
 @use "../general/variables";
 @use "./grid";
 @use "../general/typography";
+@use "../general/common";
 body{
   background-color: variables.$primaryColor;
   font-family: variables.$primaryFont;
