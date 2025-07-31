@@ -1,6 +1,10 @@
+@use "../general/mixins";
 .container {
   width: 1200px;
   margin: 0 auto;
+  @include mixins.mobile {
+    width: 90%;
+  }
 
   .row {
     display: flex;
@@ -11,6 +15,12 @@
     display: flex;
     width: calc(100% / $i);
     min-height: 1px;
+    @include mixins.mobile {
+      width: 100%;
+    }
+    @include mixins.tablet {
+      width: 50%;
+    }
   }
   }
 }
