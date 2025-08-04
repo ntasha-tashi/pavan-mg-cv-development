@@ -7,9 +7,9 @@ const Banner = () => {
         <section className="banner">
             <div className="banner__title">
                 <h1>Hi 👋,<br/>
-                    My name is<br/>
+                My name is<br/>
                     <span className="gradient">Pavan MG</span><br/>
-                    I build things for web</h1>
+                I build things for web</h1>
             </div>
             <div className="banner__image">
                 <img src={profile} alt="Profile"/>

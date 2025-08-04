@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./_social.scss";
 
 const Social = (props) => {

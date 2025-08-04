@@ -11,7 +11,7 @@
       position: fixed;
       left: 0;
       right: 0;
-      top: 100%;
+      top: 100px;
       text-align: center;
       padding: 2em;
     }
@@ -31,11 +31,9 @@
     @include mixins.mobile {
       display: inline-block;
       width: 3em;
+      position: fixed;
+      right: 2em;
+      top: 1.5em;
     }
   }
 }
-
-
-
-
-
