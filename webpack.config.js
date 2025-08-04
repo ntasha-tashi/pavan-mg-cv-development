@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const Dotenv = require('dotenv-webpack');
 
 const entryPath = "src";
 
@@ -28,7 +29,7 @@ module.exports = {
             writeToDisk: true,
         },
         compress: true,
-        port: 4004,
+        port: 3003,
         historyApiFallback: true,
     },
     module: {
@@ -81,6 +82,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/style.css",
         }),
-
+        new Dotenv(),
     ],
 };
