@@ -1,3 +1,34 @@
-.projects {
-  margin-top: 5em;
+@use "../../../scss/general/variables";
+
+.project {
+  background-color: variables.$cardColor;
+  border-radius: 2em;
+  margin: 1em;
+  text-align: left;
+  > img:first-of-type {
+    width: 100%;
+  }
+  .project__container {
+    padding: 1.5em;
+  }
+  .project__description {
+    color: variables.$secondaryColor;
+    margin-top: 1em;
+  }
+  .project__stack {
+    color: variables.$secondaryColor;
+    margin-top: 1em;
+  }
+  .project__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    color: variables.$secondaryColor;
+
+    a { text-decoration: underline; }
+    img {
+      margin-right: 0.5em;
+    }
+  }
 }

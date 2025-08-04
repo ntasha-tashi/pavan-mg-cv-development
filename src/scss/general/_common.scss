@@ -1,3 +1,5 @@
+@use "./mixins";
+
 .tech {
   .tech__social {
     display: flex;
@@ -9,6 +11,9 @@
     img {
       margin-right: 6em;
       margin-bottom: 6em;
+      @include mixins.mobile {
+        margin-right: 2em;
+      }
     }
   }
 }
