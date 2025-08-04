@@ -1,8 +1,20 @@
 @use "../../../../scss/general/variables";
+@use "../../../../scss/general/mixins";
 .menu {
   ul {
     display: flex;
     gap: 1em;
+    @include mixins.mobile {
+      flex-direction: column;
+      background: variables.$primaryColor;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 100%;
+      text-align: center;
+      padding: 2em;
+    }
   }
 
   li {
@@ -14,4 +26,16 @@
       font-family: "DM Sans", sans-serif;
     }
   }
+  .menu__toggle--icon {
+    display: none;
+    @include mixins.mobile {
+      display: inline-block;
+      width: 3em;
+    }
+  }
 }
+
+
+
+
+

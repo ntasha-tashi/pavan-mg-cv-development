@@ -1,6 +1,7 @@
 @use "../../../scss/general/variables";
 @use "../../../scss/general/mixins";
 
+
 .header, .footer {
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,18 @@
     justify-content: space-between;
     gap: 3em;
     align-items: center;
+  }
+}
+.header {
+  @include mixins.mobile {
+    height: 100px;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    background: rgba (255, 255,255, 0.1);
   }
 }
 .footer {
