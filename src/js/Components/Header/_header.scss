@@ -12,7 +12,15 @@
     align-items: center;
   }
 }
-
+.footer {
+  .header__logo {
+    filter: grayscale(1);
+  }
+  @include mixins.mobile {
+    .menu { display: none;}
+    justify-content: center;
+  }
+}
 .footer__divider {
   border-top: 3px solid variables.$footerDivider;
   background-clip:text;
@@ -20,6 +28,7 @@
   margin-bottom: 3em;
 }
 .footer__copyright {
+  @include mixins.mobile { text-align: center; }
   p {
     color: variables.$adjacentColor;
   }
