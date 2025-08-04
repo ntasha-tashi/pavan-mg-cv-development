@@ -1,3 +1,6 @@
+@use "../../../scss/general/variables";
+@use "../../../scss/general/mixins";
+
 .header, .footer {
   display: flex;
   justify-content: space-between;
@@ -7,5 +10,20 @@
     justify-content: space-between;
     gap: 3em;
     align-items: center;
+  }
+}
+
+.footer__divider {
+  border-top: 3px solid variables.$footerDivider;
+  background-clip:text;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.footer__copyright {
+  p {
+    color: variables.$adjacentColor;
+  }
+  .gradient {
+    @extend %linear-gradient;
   }
 }
