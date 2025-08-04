@@ -11,5 +11,6 @@
   @include mixins.mobile {
     flex-direction: column;
     text-align: center;
+    gap: 3em;
   }
 }
